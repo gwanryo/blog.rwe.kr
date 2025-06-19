@@ -1,42 +1,25 @@
 ---
-layout: base
+permalink: /404.html
+layout: page
 ---
 
-{% include command/index.html cwd="~" text="" %}
-<h1 hidden>404 Page not found</h1>
-<p id="page-not-found-error" class="result-error" hidden></p>
-<script>
-  function setCommand(command, comment = "") {
-    const commandText = document.querySelector('.command > .text');
-    commandText.innerText = command;
+<style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
   }
-
-  const baseurl = "{{ site.baseurl }}";
-  let request_path = location.pathname;
-
-  if(request_path.startsWith(baseurl)) {
-    request_path = request_path.slice(baseurl.length);
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
   }
+</style>
 
-  if(request_path.startsWith('/')) {
-    request_path = request_path.slice(1);
-  }
+<div class="container">
+  <h1>404</h1>
 
-  if(request_path.endsWith('.md')) {
-    const split = request_path.split('/');
-    let filename = split.at(-1);
-
-    if(request_path.match(/\/\d{4}\/\d{2}\/\d{2}\//) === null)
-      filename = filename.replace(/^\d{4}-\d{2}-\d{2}-/, v => v.replaceAll('-', '/'));
-    split[split.length-1] = filename.slice(0, -'md'.length) + 'html';
-    console.log([baseurl, ...split].join('/'))
-    location.href = [baseurl, ...split].join('/');
-  } else {
-    request_path = decodeURIComponent(request_path);
-    setCommand(`cat "${request_path}"`)
-
-    const pageNotFoundError = document.querySelector('#page-not-found-error');
-    pageNotFoundError.innerText = `cat: ${request_path}: No such file or directory`;
-    pageNotFoundError.hidden = false;
-  }
-</script>  
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>

@@ -5,7 +5,7 @@
     font-weight: 300;
 
     code {
-        font-family: Menlo, "MesloLGS NF", "Malgun Gothic", "Pretendard Variable", ui-sans-serif, -apple-system, "Apple SD Gothic Neo", sans-serif;
+        font-family: Menlo, "MesloLGS NF", "Pretendard Variable", "Malgun Gothic", ui-sans-serif, -apple-system, "Apple SD Gothic Neo", sans-serif;
         line-height: initial;
     }
 
@@ -23,10 +23,15 @@
 
     a.post-title > h1 {
         font-weight: 400;
+        font-family: Menlo, "MesloLGS NF", "Pretendard Variable", "Malgun Gothic", ui-sans-serif, -apple-system, "Apple SD Gothic Neo", sans-serif;
         margin: 0;
         font-size: 2.5rem;
         text-decoration: none;
         line-height: normal;
+    }
+
+    h1 {
+        font-size: 1.75rem;
     }
 
     h2 {
@@ -49,10 +54,10 @@
         font-size: 0.9rem;
     }
 
-    h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6 {
         font-weight: 300;
         line-height: 1.75rem;
-        margin-top: 3rem;
+        margin-top: 1.5rem;
         margin-bottom: 0.75rem;
         border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
         padding-bottom: 0.2rem;
