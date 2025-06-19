@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the Terminal Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+생업으로 프로그래밍을 하고 있는 사람입니다.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[terminal](https://github.com/fienestar/jekyll-terminal-theme)
+카메라는 `SONY α7M2`, 렌즈는 `SEL2470GM2`를 주로 사용하고 있습니다.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+이런 저런 사색하기를 좋아합니다.
 
-
-[jekyll-organization]: https://github.com/jekyll
+이 블로그의 글은 개인적인 생각이며, 제 소속과는 관련이 없습니다.
