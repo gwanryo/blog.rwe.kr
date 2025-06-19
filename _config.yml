@@ -1,53 +1,68 @@
-# https://jekyllrb.com/docs/configuration/
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-title: My Blog Title
-email: your-email@example.com
+title: Ryo Diary
+email: 9062624+gwanryo@users.noreply.github.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-
-# if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-domain:
-# the base hostname & protocol for your site, e.g. http://example.com
-url:
-# the subpath of your site, e.g. /blog
-baseurl:
-
-# timezozne e.g. Asia/Seoul
-timezone:
-
-# this is menu
-#menu:
-#  - text: Menu
-#  - text: About
-#    url: /about
-#  - text: Tags
-#    url: /tags
-#  - text: Categories
-#    url: /categories
-#  - text: u can write html like
-#  - html: <table style="margin:0 auto"><thead><tr><th style="text-align:center">1</th><th style="text-align:center">2</th><th style="text-align:center">3</th></tr></thead><tbody><tr><td style="text-align:center">4</td><td style="text-align:center">5</td><td style="text-align:center">6</td></tr><tr><td style="text-align:center">7</td><td style="text-align:center">8</td><td style="text-align:center">9</td></tr></tbody></table>
-
-footer:
-  name:
-#  link:
+  Ryo's personal blog, where I share my thoughts and experiences.
+  This is a place for me to write about my life, interests, and projects.
+  Feel free to explore and connect with me!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.rwe.kr" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+github_username: Gwanryo
 
 # Build settings
+timezone: Asia/Seoul
+
+menu:
+ - text: Menu
+ - text: About
+   url: /about
+ - text: Categories
+   url: /categories
+
+footer:
+  name: Ryo
+  link: https://github.com/gwanryo
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
 plugins:
   - jekyll-sitemap
-  - jekyll-feed
 
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
 exclude:
-  - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - node_modules
+  - node_modules/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
@@ -58,7 +73,7 @@ js: assets/js
 images: assets/images
 
 # external-posts-category-name: external links # add external post using `redirect: {uri}` in post front matter
-# catalog: true # add catalog to posts
+catalog: true # add catalog to posts
 
 # theme version
 version: 1.0.1
